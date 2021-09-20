@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Testing : MonoBehaviour
 {
+    public int speed = 9;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,15 @@ public class Testing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        transform.Translate(movement * speed * Time.deltaTime);
+
+        //if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    Debug.Log(Inout.GetAxis("Horizontal"));
+        //    transform.Translate(Vector2.right * speed * Time.deltaTime);
+        //}
     }
 }
