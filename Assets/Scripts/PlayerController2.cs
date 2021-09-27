@@ -12,18 +12,18 @@ public class PlayerController2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Move to void Update later
-        //Puck spawner
-        Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Puck spawner
+        Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
 
         //How many Pucks are on screen
         GameObject[] puckArray;
-        puckArray = GameObject.FindGameObjectsWithTag("Puck");
-        Debug.Log("Puck Count: " + puckArray.Length);
+            puckArray = GameObject.FindGameObjectsWithTag("Puck");
+            Debug.Log("Puck Count: " + puckArray.Length);
     }
 }
