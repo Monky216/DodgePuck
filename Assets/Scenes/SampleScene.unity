@@ -318,8 +318,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
-  xRange: 0
-  yRange: 0
+  xRange: 4.8
+  yRange: 4.8
   Puck: {fileID: 3074799956233212013, guid: b861bba78fd3438449ca57ccf0afeec8, type: 3}
 --- !u!1001 &1638692453
 PrefabInstance:
