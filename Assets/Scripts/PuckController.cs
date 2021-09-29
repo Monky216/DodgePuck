@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PuckController : MonoBehaviour
 {
-    public int[] direction = { 0, 1, 7, 3 };
+    public int[] direction = { 0, 1, 2, 3 };
     public int moveDirection;
 
     // Start is called before the first frame update
