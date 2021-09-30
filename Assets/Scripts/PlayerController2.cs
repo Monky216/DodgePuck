@@ -24,6 +24,5 @@ public class PlayerController2 : MonoBehaviour
         //How many Pucks are on screen
         GameObject[] puckArray;
             puckArray = GameObject.FindGameObjectsWithTag("Puck");
-            Debug.Log("Puck Count: " + puckArray.Length);
     }
 }
