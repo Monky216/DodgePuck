@@ -7,6 +7,7 @@ public class PuckController : MonoBehaviour
     public int[] direction = { 0, 1, 2, 3 };
     public int moveDirection;
     public float puckSpeed = 5.0f;
+    public GameObject Wall;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +40,12 @@ public class PuckController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        puckSpeed = -puckSpeed;
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            puckSpeed = -puckSpeed;
+        }
     }
 
 }

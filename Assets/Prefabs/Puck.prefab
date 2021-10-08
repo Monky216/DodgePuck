@@ -98,7 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   direction: 00000000010000000200000003000000
   moveDirection: 0
-  puckSpeed: 4.4
+  puckSpeed: 5
+  Wall: {fileID: 8345928289557798411, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
 --- !u!58 &1334693708320121115
 CircleCollider2D:
   m_ObjectHideFlags: 0

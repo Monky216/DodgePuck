@@ -24,9 +24,6 @@ public class PlayerController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Puck spawner
-        Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
-
         //How many Pucks are on screen
         GameObject[] puckArray;
             puckArray = GameObject.FindGameObjectsWithTag("Puck");
@@ -38,6 +35,7 @@ public class PlayerController2 : MonoBehaviour
         {
             Destroy(other.gameObject);
             Instantiate(Blocky, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+            Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
 
             //Score
             scoreText.GetComponent<ScoreKeeper>().UpdateScore();
