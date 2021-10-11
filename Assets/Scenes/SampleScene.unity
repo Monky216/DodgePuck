@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 87.126
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalScale.y
@@ -144,7 +144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6
+      value: -48.563
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -651,7 +651,7 @@ Transform:
   m_GameObject: {fileID: 1546772540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalScale: {x: 0.43, y: 0.43, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -668,9 +668,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d35483b0207bed48b3ca066c7ca2235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  xRange: 4.7
-  yRange: 4.7
+  speed: 8
+  xRange: 4.8
+  yRange: 4.8
 --- !u!114 &1546772544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.4
 --- !u!1 &2102546658
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -573, y: 135}
+  m_AnchoredPosition: {x: -822, y: 383}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107733221
@@ -872,8 +872,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 54
+  m_fontSizeBase: 54
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -908,7 +908,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -159.06567, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -948,7 +948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 28.7338
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalScale.y
@@ -956,7 +956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6
+      value: 19.3669
       objectReference: {fileID: 0}
     - target: {fileID: 1149558934073256297, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
       propertyPath: m_LocalPosition.y
