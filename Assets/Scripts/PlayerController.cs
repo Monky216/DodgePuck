@@ -43,9 +43,9 @@ public class PlayerController : MonoBehaviour
     {
         
         // Movement
-        float moveHorizontal = Input.GetAxis("Horizontal");
+        float moveHorizontal = Input.GetAxisRaw("Horizontal");
 
-        float moveVertical = Input.GetAxis("Vertical");
+        float moveVertical = Input.GetAxisRaw("Vertical");
 
         Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 

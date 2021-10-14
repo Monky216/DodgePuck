@@ -8,6 +8,7 @@ public class PuckController : MonoBehaviour
     public int moveDirection;
     public float puckSpeed = 5.0f;
     public GameObject Wall;
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,11 @@ public class PuckController : MonoBehaviour
         if (collision.gameObject.CompareTag("Wall"))
         {
             puckSpeed = -puckSpeed;
+        }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            //go to playercontroller2 script and run
         }
     }
 

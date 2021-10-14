@@ -40,6 +40,10 @@ public class PlayerController2 : MonoBehaviour
             //Score
             scoreText.GetComponent<ScoreKeeper>().UpdateScore();
         }
-    }
 
+        if (other.gameObject.CompareTag("Puck"))
+        {
+            Time.timeScale = 0;
+        }
+    }
 }
