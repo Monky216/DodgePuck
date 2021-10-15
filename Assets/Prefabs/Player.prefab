@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8678812000629050517}
   - component: {fileID: 8678812000629050602}
   - component: {fileID: 8678812000629050603}
+  - component: {fileID: 2866012802609339460}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -118,6 +119,7 @@ MonoBehaviour:
   Puck: {fileID: 3074799956233212013, guid: b861bba78fd3438449ca57ccf0afeec8, type: 3}
   Blocky: {fileID: 556093049802128888, guid: b4eabc2c34ea89c4d96dc74f9e04e8b4, type: 3}
   scoreText: {fileID: 0}
+  gameOverText: {fileID: 0}
 --- !u!58 &8678812000629050603
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -128,9 +130,30 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.4
+--- !u!50 &2866012802609339460
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8678812000629050518}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
