@@ -47,11 +47,6 @@ public class PuckController : MonoBehaviour
         {
             puckSpeed = -puckSpeed;
         }
-
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            //go to playercontroller2 script and run
-        }
     }
 
 }
