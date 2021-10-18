@@ -25,9 +25,7 @@ public class PlayerController2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //How many Pucks are on screen
-        GameObject[] puckArray;
-            puckArray = GameObject.FindGameObjectsWithTag("Puck");
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -47,5 +45,17 @@ public class PlayerController2 : MonoBehaviour
             gameOverText.SetActive(true);
             Time.timeScale = 0;
         }
+    }
+
+    public void NewGame()
+    {
+        //death to pucks
+        GameObject[] allPucks = GameObject.FindGameObjectsWithTag("Puck");
+        foreach (GameObject death in allPucks)
+            GameObject.Destroy(death);
+
+        //reset game
+        transform.position = new Vector2(0, 0);
+        Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
     }
 }
