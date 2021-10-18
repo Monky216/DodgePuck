@@ -42,6 +42,7 @@ public class PlayerController2 : MonoBehaviour
 
         if (other.gameObject.CompareTag("Puck"))
         {
+            //Game Over
             gameOverText.SetActive(true);
             Time.timeScale = 0;
         }
@@ -54,8 +55,17 @@ public class PlayerController2 : MonoBehaviour
         foreach (GameObject death in allPucks)
             GameObject.Destroy(death);
 
+        //death to blockys
+        GameObject[] allBlockys = GameObject.FindGameObjectsWithTag("Blocky");
+        foreach (GameObject death in allBlockys)
+            GameObject.Destroy(death);
+
         //reset game
         transform.position = new Vector2(0, 0);
+        Instantiate(Blocky, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
         Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+        Time.timeScale = 1;
+        gameOverText.SetActive(false);
+        scoreText.GetComponent<ScoreKeeper>().ClearScore();
     }
 }

@@ -25,4 +25,10 @@ public class ScoreKeeper : MonoBehaviour
         scoreValue += 5;
         scoreText.text = ("Score: " + scoreValue);
     }
+
+    public void ClearScore()
+    {
+        scoreValue = 0;
+        scoreText.text = ("Score: " + scoreValue);
+    }
 }
