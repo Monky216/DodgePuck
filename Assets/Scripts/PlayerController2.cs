@@ -32,6 +32,7 @@ public class PlayerController2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Blocky"))
         {
+            //level 2!
             Destroy(other.gameObject);
             Instantiate(Blocky, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
             Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
@@ -60,10 +61,14 @@ public class PlayerController2 : MonoBehaviour
         foreach (GameObject death in allBlockys)
             GameObject.Destroy(death);
 
-        //reset game
+        //reset position
         transform.position = new Vector2(0, 0);
+
+        //reset gameojects
         Instantiate(Blocky, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
         Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
+
+        //reset scene
         Time.timeScale = 1;
         gameOverText.SetActive(false);
         scoreText.GetComponent<ScoreKeeper>().ClearScore();

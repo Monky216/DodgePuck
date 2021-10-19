@@ -6,7 +6,9 @@ using TMPro;
 public class ScoreKeeper : MonoBehaviour
 {
     private TextMeshProUGUI scoreText;
+    private TextMeshProUGUI highScoreText;
     public int scoreValue;
+    private int highScoreValue;
 
     // Start is called before the first frame update
     void Start()
