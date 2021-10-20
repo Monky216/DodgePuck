@@ -25,12 +25,14 @@ public class ScoreKeeper : MonoBehaviour
     public void UpdateScore()
     {
         scoreValue += 5;
+        //DOES NOT LIKE 29!!!
         scoreText.text = ("Score: " + scoreValue);
     }
 
     public void ClearScore()
     {
         scoreValue = 0;
+        //DOES NOT LIKE 36!!!
         scoreText.text = ("Score: " + scoreValue);
     }
 }

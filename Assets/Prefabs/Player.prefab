@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.7491545, g: 0.8077274, b: 0.8584906, a: 1}
+  m_Color: {r: 0.75711995, g: 0.82600844, b: 0.8867924, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -119,8 +119,8 @@ MonoBehaviour:
   yRange: 4.8
   Puck: {fileID: 3074799956233212013, guid: b861bba78fd3438449ca57ccf0afeec8, type: 3}
   Blocky: {fileID: 556093049802128888, guid: b4eabc2c34ea89c4d96dc74f9e04e8b4, type: 3}
-  scoreText: {fileID: 0}
-  gameOverText: {fileID: 0}
+  scoreText: {fileID: 516624719885011746, guid: cfd0844d0bf296c488b7599356c655b8, type: 3}
+  gameOverText: {fileID: 3438247425832599036, guid: e40c970fdad77c442809aed5badcde81, type: 3}
 --- !u!58 &8678812000629050603
 CircleCollider2D:
   m_ObjectHideFlags: 0

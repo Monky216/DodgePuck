@@ -22,7 +22,7 @@ public class PowerUps : MonoBehaviour
     //if hit by special puck, invert controls for set time
     private void OnTriggerEnter2D(Collider2D welp)
     {
-        if (welp.gameObject.CompareTag("InvertdPuck"))
+        if (welp.gameObject.CompareTag("InvertedPuck"))
         {
             //physical I-puck
             Debug.Log("uh oh spaghetti o's");

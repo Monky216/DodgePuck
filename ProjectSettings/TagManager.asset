@@ -8,6 +8,7 @@ TagManager:
   - Blocky
   - Wall
   - InvertedPuck
+  - ScoreText
   layers:
   - Default
   - TransparentFX
