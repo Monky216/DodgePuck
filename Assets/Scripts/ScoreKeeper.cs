@@ -13,6 +13,7 @@ public class ScoreKeeper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreValue = 0;
         scoreText = GetComponent<TextMeshProUGUI>();
     }
 
@@ -26,13 +27,13 @@ public class ScoreKeeper : MonoBehaviour
     {
         scoreValue += 5;
         //DOES NOT LIKE 29!!!
-        scoreText.text = ("Score: " + scoreValue);
+        scoreText.text = "Score: " + scoreValue.ToString();
     }
 
     public void ClearScore()
     {
         scoreValue = 0;
         //DOES NOT LIKE 36!!!
-        scoreText.text = ("Score: " + scoreValue);
+        scoreText.text = "Score: " + scoreValue.ToString();
     }
 }

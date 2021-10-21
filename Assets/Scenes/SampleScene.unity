@@ -406,6 +406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abf22eff16d575a4dac0b833e94bc88e, type: 3}
+--- !u!1 &790877355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3438247425832599036, guid: e40c970fdad77c442809aed5badcde81, type: 3}
+  m_PrefabInstance: {fileID: 3438247426490213323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1083474156
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +648,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235721150}
   m_CullTransparentMesh: 1
+--- !u!1 &1439285059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 516624719885011746, guid: cfd0844d0bf296c488b7599356c655b8, type: 3}
+  m_PrefabInstance: {fileID: 516624721569120193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1447996070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1364,5 +1374,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8678812000629050602, guid: c9fca1c6ae42b2f4ba569f61ddc1c06f, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1439285059}
+    - target: {fileID: 8678812000629050602, guid: c9fca1c6ae42b2f4ba569f61ddc1c06f, type: 3}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 790877355}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9fca1c6ae42b2f4ba569f61ddc1c06f, type: 3}
