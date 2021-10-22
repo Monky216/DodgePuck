@@ -9,6 +9,7 @@ TagManager:
   - Wall
   - InvertedPuck
   - ScoreText
+  - SafeZone
   layers:
   - Default
   - TransparentFX
