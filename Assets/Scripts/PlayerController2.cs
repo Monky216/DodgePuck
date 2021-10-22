@@ -37,7 +37,7 @@ public class PlayerController2 : MonoBehaviour
             Instantiate(Blocky, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
             Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
 
-            //Score DOES NOT LIKE 41!!!
+            //Score
             scoreText.GetComponent<ScoreKeeper>().UpdateScore();
         }
 
@@ -71,7 +71,6 @@ public class PlayerController2 : MonoBehaviour
         //reset scene
         Time.timeScale = 1;
         gameOverText.SetActive(false);
-        //DOES MOT LIKE 75!!!
         scoreText.GetComponent<ScoreKeeper>().ClearScore();
     }
 }

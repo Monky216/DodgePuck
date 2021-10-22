@@ -8,32 +8,35 @@ public class ScoreKeeper : MonoBehaviour
     private TextMeshProUGUI scoreText;
     private TextMeshProUGUI highScoreText;
     public int scoreValue;
-    private int highScoreValue;
+    public int highScoreValue;
 
     // Start is called before the first frame update
     void Start()
     {
-        scoreValue = 0;
         scoreText = GetComponent<TextMeshProUGUI>();
+
+        highScoreText = GameObject.Find("HighScoreText").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (scoreValue > highScoreValue)
+        {
+            highScoreValue = scoreValue;
+            highScoreText.text = "High: " + highScoreValue.ToString();
+        }
     }
 
     public void UpdateScore()
     {
         scoreValue += 5;
-        //DOES NOT LIKE 29!!!
         scoreText.text = "Score: " + scoreValue.ToString();
     }
 
     public void ClearScore()
     {
         scoreValue = 0;
-        //DOES NOT LIKE 36!!!
         scoreText.text = "Score: " + scoreValue.ToString();
     }
 }
