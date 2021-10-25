@@ -24,6 +24,7 @@ public class SafeZone : MonoBehaviour
 
         if (safe.gameObject.CompareTag("Player"))
         {
+            //destory all SafeZones
             GameObject[] allSafeZones = GameObject.FindGameObjectsWithTag("SafeZone");
             foreach (GameObject death in allSafeZones)
                 GameObject.Destroy(death);
@@ -34,7 +35,7 @@ public class SafeZone : MonoBehaviour
 
         else if (!safe.gameObject.CompareTag("Player"))
         {
-            //Instantiate(Puck, new Vector2(where ever SafeZone is);
+            //Instantiate(Puck, new Vector2(where SafeZone is);
         }
     }
 }
