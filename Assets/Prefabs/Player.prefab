@@ -121,6 +121,7 @@ MonoBehaviour:
   Blocky: {fileID: 556093049802128888, guid: b4eabc2c34ea89c4d96dc74f9e04e8b4, type: 3}
   scoreText: {fileID: 516624719885011746, guid: cfd0844d0bf296c488b7599356c655b8, type: 3}
   gameOverText: {fileID: 3438247425832599036, guid: e40c970fdad77c442809aed5badcde81, type: 3}
+  SafeZone: {fileID: 1787231040823332454, guid: 2135a97119ef88545bb67b002864a5a7, type: 3}
 --- !u!58 &8678812000629050603
 CircleCollider2D:
   m_ObjectHideFlags: 0

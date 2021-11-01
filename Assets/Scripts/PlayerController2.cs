@@ -11,6 +11,7 @@ public class PlayerController2 : MonoBehaviour
     public GameObject Blocky;
     public GameObject scoreText;
     public GameObject gameOverText;
+    public GameObject safeZone;
 
     // Start is called before the first frame update
     void Start()
@@ -35,8 +36,7 @@ public class PlayerController2 : MonoBehaviour
             //level 2!
             Destroy(other.gameObject);
             Instantiate(Blocky, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
-            //Instantiate(Puck, new Vector2(Random.Range(-xRange, xRange), Random.Range(-yRange, yRange)), Quaternion.identity);
-            scoreText.GetComponent<SafeZone>().OnTriggerEnter2D();
+            safeZone.GetComponent<SafeChecker>().OnTriggerEnter2D();
 
             //Score
             scoreText.GetComponent<ScoreKeeper>().UpdateScore();
@@ -60,6 +60,11 @@ public class PlayerController2 : MonoBehaviour
         //death to blockys
         GameObject[] allBlockys = GameObject.FindGameObjectsWithTag("Blocky");
         foreach (GameObject death in allBlockys)
+            GameObject.Destroy(death);
+
+        //death to safezones
+        GameObject[] allSafeZones = GameObject.FindGameObjectsWithTag("SafeZone");
+        foreach (GameObject death in allSafeZones)
             GameObject.Destroy(death);
 
         //reset position
